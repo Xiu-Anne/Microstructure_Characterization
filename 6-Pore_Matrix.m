@@ -52,7 +52,7 @@ Verify_Pore=OriginalImage-OriginalImage.*uint16(Pore);
 %%
 Matrix = OriginalImage>=0; Matrix = Matrix - Fiber_final; Matrix = Matrix - Pore;
 Syn_Image = Pore*0 + Matrix*100 + Fiber_final*250;
-Directory='C:\Users\thi-xiu.le\Documents\Postdoc\Code Segmentation\Test3_1751_1950\Synthetic_Images\Syn_Images\Syn_';
+Directory='Syn_';
 for i=1:size(Touch_Final,3)
     g{i}=uint8(Syn_Image(:,:,i));
     imwrite(g{i},sprintf('%s%05d.tif', Directory, i))
