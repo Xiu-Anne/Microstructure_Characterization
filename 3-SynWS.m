@@ -35,7 +35,7 @@ for p=1:size(a_WS,2)
 end
 %% Saving synthetic fibers
 FiberRR=Fiber_RR>0;
-Directory='C:\Users\thi-xiu.le\Documents\Postdoc\Code Segmentation\Test3_1751_1950\Synthetic_Images\WS_Without_Interfaces\WS_WI_';
+Directory='WS_WI_';
 for i=1:size(Touch,3)
     g{i}=uint8(255*FiberRR(:,:,i));
     imwrite(g{i},sprintf('%s%05d.tif', Directory, i))
@@ -43,7 +43,7 @@ end
 %% Save synthetic WS fibers
 NonTouch_WS = FiberRR;
 NonTouch_All = NonTouch_PF + NonTouch_WS;
-Directory='C:\Users\thi-xiu.le\Documents\Postdoc\Code Segmentation\Test3_1751_1950\NonTouch_All\NT_';
+Directory='NT_';
 for i=1:size(Touch,3)
     g{i}=uint8(255*NonTouch_All(:,:,i));
     imwrite(g{i},sprintf('%s%05d.tif', Directory, i))
