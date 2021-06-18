@@ -1,5 +1,5 @@
 % NonTouch_All + Touch_Final=> WS sub-zones
-Directory = 'C:\Users\thi-xiu.le\Documents\Postdoc\Code Segmentation\Test3_1751_1950\Synthetic_Images\Interfaces_WS\Inter_WS_';
+Directory = 'Inter_WS_';
 i1=1;i2=size(Touch_Final,3);
 for i=i1:i2
 fname{i-i1+1}= sprintf('%s%05d.tif', Directory, i-1);
@@ -198,16 +198,16 @@ ax=gca;
 set(gca,'XTick',-pi/2:pi/4:pi/2)
 ax.XTickLabel = {'-pi/2','-pi/4','0','pi/4','pi/2'};
 %% save 
-save('C:\Users\thi-xiu.le\Documents\Postdoc\Code Segmentation\Test3_1751_1950\Volume_Fiber','Volume_Fiber');
-save('C:\Users\thi-xiu.le\Documents\Postdoc\Code Segmentation\Test3_1751_1950\X_cen_1','X_fib_all');
-save('C:\Users\thi-xiu.le\Documents\Postdoc\Code Segmentation\Test3_1751_1950\Y_cen_1','Y_fib_all');
-save('C:\Users\thi-xiu.le\Documents\Postdoc\Code Segmentation\Test3_1751_1950\Z_cen_1','Z_fib_all');
-save('C:\Users\thi-xiu.le\Documents\Postdoc\Code Segmentation\Test3_1751_1950\R_a_1','a_fib_all');
-save('C:\Users\thi-xiu.le\Documents\Postdoc\Code Segmentation\Test3_1751_1950\R_b_1','b_fib_all');
-save('C:\Users\thi-xiu.le\Documents\Postdoc\Code Segmentation\Test3_1751_1950\R_c_1','c_fib_all');
-save('C:\Users\thi-xiu.le\Documents\Postdoc\Code Segmentation\Test3_1751_1950\Vecteur1_1','Vecteur1_fib_all');
-save('C:\Users\thi-xiu.le\Documents\Postdoc\Code Segmentation\Test3_1751_1950\Vecteur2_1','Vecteur2_fib_all');
-save('C:\Users\thi-xiu.le\Documents\Postdoc\Code Segmentation\Test3_1751_1950\Vecteur3_1','Vecteur3_fib_all');
+save('Volume_Fiber','Volume_Fiber');
+save('X_cen_1','X_fib_all');
+save('Y_cen_1','Y_fib_all');
+save('Z_cen_1','Z_fib_all');
+save('R_a_1','a_fib_all');
+save('R_b_1','b_fib_all');
+save('R_c_1','c_fib_all');
+save('Vecteur1_1','Vecteur1_fib_all');
+save('Vecteur2_1','Vecteur2_fib_all');
+save('Vecteur3_1','Vecteur3_fib_all');
 %% synthesize all parameters to create equivalent fibers
 XX_min=[];XX_max=[];YY_min=[];YY_max=[];ZZ_min=[];ZZ_max=[];
 for p=1:size(a_fib_all,2)
@@ -246,7 +246,7 @@ for p=1:size(a_fib_all,2)
 end
 %% Save equivalent fibers
 Fiber=Fiber_R>0;
-Directory='C:\Users\thi-xiu.le\Documents\Postdoc\Code Segmentation\Test3_1751_1950\Synthetic_Images\Fiber_Inter_Final\';
+Directory='';
 for i=1:size(Touch_Final,3)
     g{i}=uint8(255*Fiber(:,:,i));
     imwrite(g{i},sprintf('%s%05d.tif', Directory, i))
