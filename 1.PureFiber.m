@@ -1,6 +1,6 @@
 clear;clc;close all
 %% Original_Image reading
-Directory = 'C:\Users\thi-xiu.le\Documents\Postdoc\Code Segmentation\Test3_1751_1950\Images_L_500x500x200_';
+Directory = 'Images_L_500x500x200_';
 %for i=n-1:-1:1
 i1=1;
 i2=200;
@@ -14,7 +14,7 @@ for i=1:(i2-i1)+1% Number of 2Dimages
 end
 %
 % Read segmented images
-Directory = 'C:\Users\thi-xiu.le\Documents\Postdoc\Code Segmentation\Test3_1751_1950\Color_Images_EF\';
+Directory = '';
 i1=1;
 i2=200;
 for i=i1:i2
@@ -142,7 +142,7 @@ X_cen=X_c(L_NT);Y_cen=Y_c(L_NT);Z_cen=Z_c(L_NT);
 R_a=a_R(L_NT);R_b=b_R(L_NT);R_c=c_R(L_NT);
 Vecteur1_a=Vecteur1(:,L_NT);Vecteur2_b=Vecteur2(:,L_NT);Vecteur3_c=Vecteur3(:,L_NT);
 %% Saving touching particles
-Directory='C:\Users\thi-xiu.le\Documents\Postdoc\Code Segmentation\Test3_1751_1950\Touch\PF\';
+Directory='';
 for i=1:size(Touch,3)
     g{i}=uint8(255*Touch(:,:,i));
     imwrite(g{i},sprintf('%s%05d.tif', Directory, i))
