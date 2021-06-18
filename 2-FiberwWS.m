@@ -1,5 +1,5 @@
 %% Touching particles, separated via watershed with markers
-Directory = 'C:\Users\thi-xiu.le\Documents\Postdoc\Code Segmentation\Test3_1751_1950\Touch\PF\WS_50\WS_';
+Directory = 'WS_';
 i1=1;i2=size(Touch,3);
 for i=i1:i2
 fname{i-i1+1}= sprintf('%s%05d.tif', Directory, i-1);
@@ -212,7 +212,7 @@ Vecteur1_WS=Vecteur1_WS(:,L_WS);Vecteur2_WS=Vecteur2_WS(:,L_WS);Vecteur3_WS=Vect
 %% Save remaing touching particles
 Touch_2=ismember(Image_label,L_TA_01);
 Touch_Final=Touch_2;%Touch_add+
-Directory='C:\Users\thi-xiu.le\Documents\Postdoc\Code Segmentation\Test3_1751_1950\Touch\Touch_Rest\TR_';
+Directory='TR_';
 for i=1:size(Touch_Final,3)
     g{i}=uint8(255*Touch_Final(:,:,i));
     imwrite(g{i},sprintf('%s%05d.tif', Directory, i))
