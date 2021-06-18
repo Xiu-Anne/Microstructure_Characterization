@@ -1,4 +1,10 @@
-# Microstructure-Characterization
+# Microstructure-Characterization (2 parts)
+
+# 1rst: Segmentation considering interfaces
+
+![Img1](https://user-images.githubusercontent.com/78222574/122573489-2368da00-d04f-11eb-9ba1-1d015dda411f.PNG)
+
+# 2nd: Characterize fiber distribution & Image synthesis
 
 1. Fiber distributions:
 
@@ -8,4 +14,5 @@
 
 2. Syegmented image with equivalent  parallelepiped fibers
 
-![Uploading image.png…]()
+![Img1](https://user-images.githubusercontent.com/78222574/122573937-6925a280-d04f-11eb-9839-80b32ba873fc.PNG)
+
