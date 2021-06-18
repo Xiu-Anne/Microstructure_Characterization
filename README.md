@@ -4,7 +4,7 @@
 
 ![Img1](https://user-images.githubusercontent.com/78222574/122573489-2368da00-d04f-11eb-9ba1-1d015dda411f.PNG)
 
-# 2nd: Characterize fiber distribution & Image synthesis
+# 2nd: Characterize fiber distribution & Image synthesis (Matlab)
 
 1. Fiber distributions:
 
