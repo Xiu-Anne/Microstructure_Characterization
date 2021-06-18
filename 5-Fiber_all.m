@@ -1,4 +1,4 @@
-Directory = 'C:\Users\thi-xiu.le\Documents\Postdoc\Code Segmentation\Test3_1751_1950\Synthetic_Images\All_WS\WS_';
+Directory = 'WS_';
 i1=1;i2=200;
 for i=i1:i2
 fname{i-i1+1}= sprintf('%s%05d.tif', Directory, i-1);
@@ -84,7 +84,7 @@ Fiber_add_f(ind_add)=1;
 Fiber_final=(Fiber_add+Fiber+Fiber_add_f)>0;
 (sum(sum(sum(Fiber_final))))/(500*500*200)*100
 %%
-Directory='C:\Users\thi-xiu.le\Documents\Postdoc\Code Segmentation\Test3_1751_1950\Synthetic_Images\Fiber_Final\F_';
+Directory='F_';
 for i=1:size(Fiber_final,3)
     g{i}=uint8(255*Fiber_final(:,:,i));
     imwrite(g{i},sprintf('%s%05d.tif', Directory, i))
