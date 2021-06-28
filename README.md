@@ -1,4 +1,4 @@
-# Microstructure-Characterization (2 parts)
+# Microstructure_Characterization (2 parts)
 
 # 1rst: Segmentation considering interfaces (Python)
 
